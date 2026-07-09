@@ -1,5 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+
 import { ChatComponent } from './components/chat/chat';
 
 @Component({
@@ -10,4 +11,5 @@ import { ChatComponent } from './components/chat/chat';
 })
 export class App {
   protected readonly title = signal('munnin-front');
+
 }

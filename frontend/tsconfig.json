@@ -3,7 +3,9 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+
     "strict": true,
+
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
@@ -18,8 +20,10 @@
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
+
     "strictInputAccessModifiers": true,
     "strictTemplates": true
+
   },
   "files": [],
   "references": [

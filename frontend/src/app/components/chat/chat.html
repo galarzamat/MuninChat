@@ -1,0 +1,26 @@
+<div class="chat-container">
+  <header class="chat-header">
+    <h2> MunninChat <span class="sala-id">// Sala: LOCAL-DEV</span></h2>
+    <p class="status">Modo: Zero-Knowledge E2EE (Localhost)</p>
+  </header>
+
+  <div class="messages-area">
+    @for (msg of listaMensajes; track msg) {
+      <div class="message" [ngClass]="{'outgoing': msg.esMio, 'incoming': !msg.esMio}">
+        <span class="sender">{{ msg.esMio ? 'Tú' : 'Remoto' }}:</span>
+        <p class="text">{{ msg.texto }}</p>
+      </div>
+    }
+  </div>
+
+  <footer class="chat-footer">
+    <input 
+      type="text" 
+      placeholder="Escribe un mensaje seguro..." 
+      class="chat-input"
+      [(ngModel)]="nuevoMensaje"
+      (keyup.enter)="enviarMensajeReal()"
+    />
+    <button class="send-btn" (click)="enviarMensajeReal()">Enviar</button>
+  </footer>
+</div>

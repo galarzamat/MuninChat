@@ -1,0 +1,110 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #121214;
+  color: #e1e1e6;
+  border-radius: 8px;
+  border: 1px solid #29292e;
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.chat-header {
+  background-color: #202024;
+  padding: 15px;
+  border-bottom: 1px solid #29292e;
+  text-align: center;
+}
+
+.chat-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #04d361;
+}
+
+.sala-id {
+  color: #8d8d99;
+  font-size: 0.9rem;
+}
+
+.status {
+  margin: 5px 0 0 0;
+  font-size: 0.75rem;
+  color: #a8a8b3;
+}
+
+.messages-area {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.message {
+  max-width: 80%;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.message .sender {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.incoming {
+  background-color: #202024;
+  align-self: flex-start;
+  border-left: 3px solid #04d361;
+}
+
+.outgoing {
+  background-color: #29292e;
+  align-self: flex-end;
+  border-right: 3px solid #8257e5;
+}
+
+.chat-footer {
+  padding: 15px;
+  background-color: #202024;
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid #29292e;
+}
+
+.chat-input {
+  flex: 1;
+  background-color: #121214;
+  border: 1px solid #29292e;
+  padding: 12px;
+  color: #e1e1e6;
+  border-radius: 4px;
+  outline: none;
+}
+
+.chat-input:focus {
+  border-color: #04d361;
+}
+
+.send-btn {
+  background-color: #04d361;
+  color: #121214;
+  border: none;
+  padding: 0 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.send-btn:hover {
+  background-color: #00b34d;
+}
